@@ -1,53 +1,107 @@
 .root {
-    padding: 1rem 0 2rem;
     display: flex;
-    margin: auto;
+}
+
+.profile_section {
+    display: flex;
+    flex: 1 1;
+    border-right: solid 3px white;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.profile_section:last-child {
+    border: none;
+    flex-direction: column;
+    
 }
 
 
 .profile_img {
     width: 200px;  
+    height: 200px;  
     border-radius: 100%;
     border: solid 8px black;
     box-shadow: 4px 4px white;
-    margin-right: 3rem;
+    margin: 0 3rem 0 0;
 }
 
 .profile_desc_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: white;
+    margin: 1.2rem 0 2rem;
 
-    h2 {
+
+    & > h2 {
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
     }
 
-    p {
+    & > p {
         text-align: left;
-        margin-top: 0.5rem;
-        font-family: 'GmarketSansLight', sans-serif;
-        font-size: 1rem;
+        margin: 0.5rem 0;
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 1.3rem;
         font-stretch: expanded;
+        font-weight: 300;
         line-height: 1.8rem;
+        text-align: center;
     }
 
-    ul {
-        display: flex;
-        font-family: 'Montserrat', sans-serif;
-        color: black;
+}
+
+.favorites_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sub_title {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    background-color: white;
+}
+
+.favorites {
+    width: 100%;
+    display: flex;
+
+    .favorites_item {
+        margin-right: 1rem;
         font-size: 1.2rem;
-        margin-top: 1.5rem;
-
-        li {
-            background-color: white;
-            margin-right: 1rem;
-        }
-
-        li:hover {
-            background-color: #33FF33;
-        }
     }
+}
+
+.btns_wrapper,
+.btns_wrapper > a {
+    width: 100%;
+}
+
+.round_btn {
+    width: 100%;
+    padding: 0.6rem 0;
+    border-radius: 20px;
+    border: solid 2px white;
+    color: white;
+    margin: 0 0 1rem;
+}
+
+.btns_wrapper > a:last-child > .round_btn {
+    margin: 0;
+}
+
+.round_btn:hover {
+    background-color: white;
+    color: black;
+    transition: background 0.3s ease-out;
 }
