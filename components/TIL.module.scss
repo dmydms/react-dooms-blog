@@ -1,0 +1,28 @@
+.root {
+    width: 100%;
+    color: white;
+}
+
+.carousel_wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    overflow: visible;
+}
+
+.carousel_cell {
+    width: 600px;
+    background-color: pink;
+    border: solid 1px yellow;
+    margin-right: 1rem;
+}
+
+.carousel_cell:last-child {
+    margin-right: 0;
+}
+
