@@ -1,5 +1,4 @@
 import styles from './TIL.module.scss'
-import { Queue } from '../utils/dataStruct'
 import { useState } from 'react'
 
 export default function TIL() {
